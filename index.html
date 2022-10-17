@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./assets/css/0 - STYLE.css">
+  <link rel="stylesheet" href="./assets/css/1 - NAV.css">
+  <link rel="stylesheet" href="./assets/css/2 - MAIN.css">
+  <link rel="stylesheet" href="./assets/css/3 - FOOTER.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+  </style>
+  <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
+
+  <!-- minified CSS -->
+  <link href="./assets/bootstrap-5.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <title>Projeto 1 - HTML/CSS</title>
+</head>
+<!--------------------------------------------------------------------------->
+
+<body>
+  <div class="preload-wrapper">
+  <div class="spinner-grow" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+  <div class="background">
+    <header>
+      <div>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
+            <a  id="site" class="navbar-brand" href=""><img src="./assets/img/iconspng.png" alt="" width="40" height="40"> Old
+              Club:
+              Jogos Retrô</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Gêneros
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Ação</a></li>
+                        <li><a class="dropdown-item" href="#">Aventura</a></li>
+                        <li><a class="dropdown-item" href="#">Corrida</a></li>
+                        <li><a class="dropdown-item" href="#">Esportes</a></li>
+                        <li><a class="dropdown-item" href="#">Estratégia</a></li>
+                        <li><a class="dropdown-item" href="#">FPS</a></li>
+                        <li><a class="dropdown-item" href="#">RPG</a></li>
+                        <li><a class="dropdown-item" href="#">Simulação</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Ver todos os jogos</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Consoles
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Game Boy Advance</a></li>
+                        <li><a class="dropdown-item" href="#">Game Boy Color</a></li>
+                        <li><a class="dropdown-item" href="#">Game Cube</a></li>
+                        <li><a class="dropdown-item" href="#">Nintendo 64</a></li>
+                        <li><a class="dropdown-item" href="#">PlayStation 2</a></li>
+                        <li><a class="dropdown-item" href="#">PlayStation</a></li>
+                        <li><a class="dropdown-item" href="#">Sega Dreamcast</a></li>
+                        <li><a class="dropdown-item" href="#">Sega Saturn</a></li>
+                        <li><a class="dropdown-item" href="#">Sega Genesis</a></li>
+                        <li><a class="dropdown-item" href="#">Super Nintendo</a></li>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">todos</a></li>
+                  </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Sobre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#"> Sobre os consoles</a></li>
+                      <li><a class="dropdown-item" href="#"> Preservação de Jogos</a></li>
+                    </ul>
+                  </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="px-2 search" type="search" placeholder="Buscar Jogos" aria-label="Search">
+                    <button class="btn0" type="submit">Procurar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- end nav -->
+
+    <br><br><br>
+    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="banner-container">
+        <div id="banner" class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/MM3.png" class="img-fluid" alt="Legend of Zelda: Majora's Mask">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/SuperMario64.png" class="img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/Rogue Squadron.png" class="img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br><br><br>
+
+    <!-- end corousel -->
+
+    <!--carrosel slick-->
+    <div class="container">
+    <div class="your-class">   
+    </div>
+  </div>
+
+    <!--end of slick carrosel-->
+
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="title">
+              <h3 class="mb-3">NINTENDO 64</h3>
+            </div>
+          </div>
+          <div class="col-6 text-right">
+            <a class="btn btn-dark mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="btn btn-dark mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-12">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+              <div id="corrido" class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container-cardgame">
+
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Perfect_dark_box.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title" class><button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280"
+                          src="./assets/img/The_Legend_of_Zelda_Ocarina_of_Time.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Wave_Race_64_Coverart.png">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/StarFox64_N64_Game_Box.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container-cardgame">
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Papermario.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Pokémon_Stadium_2_Coverart.png">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/GoldenEye007box.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Banjo_Kazooie_Cover.png">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container-cardgame">
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Mario_Tennis_box.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Supersmashbox.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Pokémon_Snap_Coverart.png">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card nintendo64">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Conkersbfdbox.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end carousel2 -->
+
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="title">
+              <h3 class="mb-3">PLAYSTATION 2 </h3>
+            </div>
+          </div>
+          <div class="col-6 text-right">
+            <a class="btn btn-dark mb-3 mr-1" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="btn btn-dark mb-3 " href="#carouselExampleIndicators3" role="button" data-slide="next">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-12">
+            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+              <div id="corrido" class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+
+                    <div class="col-md-3 mb-3">
+                      <div class="card ps2">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/GTA3boxcover.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="card ps2">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/Metalgear2boxart.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="card ps2">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/tonyhawksproskater3.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="card ps2">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/residentevil4.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-3 mb-3">
+                      <div class="card ps2">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/granturismo3.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="card ps2">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/dmc.jpg">
+                        <div class="card-body">
+                          <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal">
+                              Jogar
+                            </button></h4>
+                          <p class="card-text">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="card ps2">
+                        <img class="img-fluid" alt="100%x280" src="./assets/img/gow1.jpg"">
+                      <div class=" card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card ps2">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/virtuaf3.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <div class="card ps2">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/okami.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card ps2">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/nhl2022.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card ps2">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/FFX.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card ps2">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/maddennfl2003.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <!--end of carousel3-->
+
+  <section class="pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="title">
+            <h3 class="mb-3">SEGA DREAMCAST </h3>
+          </div>
+        </div>
+        <div class="col-6 text-right">
+          <a class="btn btn-dark mb-3 mr-1" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <a class="btn btn-dark mb-3 " href="#carouselExampleIndicators4" role="button" data-slide="next">
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-12">
+          <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+            <div id="corrido" class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/soul_calibur.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/thps2.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/jet-grind-radio.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/skies.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/mvc.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/phantasy-star-online-front.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/sonic-adventure-2.jpg">
+                      <div class=" card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/mstreetracer.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/power-stone-2.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/tennis-2k2.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/samba-de-amigo.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card dcast">
+                      <img class="img-fluid" alt="100%x280" src="./assets/img/ufc.jpg">
+                      <div class="card-body">
+                        <h4 class="card-title"><button  id= "butao" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Jogar
+                          </button></h4>
+                        <p class="card-text"></p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--end of carousel4-->
+  <!--modal-->
+  
+  <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="animate__animated animate__pulse" class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <!-- <p>Não se preocupe! Tá aqui uma animação daora que eu fiz e o nyancat pra te animar. \o/</p>
+        
+          <br><br>
+          <div class="animacao">
+            <div class="anel"></div>
+            <div class="anel"></div>
+            <div class="anel"></div>
+          </div>
+          <br>
+          <div class="iframe-container"><iframe width="450" height="253" src="https://www.youtube.com/embed/QH2-TGUlwu4"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div> -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- end modal-->
+
+  <section class="pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="title">
+            <h3 class="mb-3">Novidades </h3>
+          </div>
+          <div class="countainer">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    06/09 - Atualizações do Site
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda excepturi sed minus
+                    delectus tenetur quasi nam iure illo odio distinctio quas sint eligendi dicta eius pariatur, atque
+                    modi autem?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    02/09 - Vencedores do Concurso de Fanarts
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium ut sapiente eaque ex est
+                    ipsum, nemo voluptates, perspiciatis quia repudiandae eum veniam, velit iste inventore
+                    reprehenderit. Quidem, et consequatur.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    29/08 - Manutenção Emergencial
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aspernatur dignissimos quisquam non
+                    ut amet, voluptatem soluta temporibus voluptatibus iure necessitatibus quam nostrum, maxime odit
+                    architecto. Beatae ipsa ipsam repudiandae?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+  <footer class="bg-dark text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Quem somos</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contato</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Fóruns</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Redes Sociais</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>twitter</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Facebook</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3">
+      © 2022 Copyright:
+      confeccionado por um desempregado muito sem graça que adora escrever bobeiras no final do rodapé.
+    </div>
+  </footer>
+</body>
+
+<script src="./assets/bootstrap-5.2.1/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

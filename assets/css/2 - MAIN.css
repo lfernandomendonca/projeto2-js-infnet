@@ -1,0 +1,136 @@
+.carousel .carousel-item {
+    text-align: center;
+}
+
+  #banner>.carousel-item>img{
+    width: auto;
+    height: 60vh;
+    border-radius: 8%;
+}
+
+.title{
+  background-color:#212529;
+  background-image: url("https://i.ibb.co/R9m7LRp/bg-top-4.png")
+}
+
+.title>h3{
+  color:white;
+  padding-left: 15px;
+}
+
+.modal-header{
+  background-color:#212529;
+  background-image: url("https://i.ibb.co/R9m7LRp/bg-top-4.png")
+}
+
+.modal-header>h5{
+  color:white;
+  padding-left: 15px;
+}
+
+.nintendo64>img{
+  width: 300px;
+  height: 208px;
+}
+
+.container-query{
+  margin: 0 20px;
+  
+}
+
+.container-cardgame{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+@media (max-width: 1078px)
+{
+  .container-cardgame{
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn-dark{
+  background-image: url("https://i.ibb.co/R9m7LRp/bg-top-4.png");
+}
+.ps2>img{
+  width: 253px;
+  height:327px;
+}
+.dcast>img{
+  width: 253px;
+  height: 253px;
+}
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom:56.25%;
+  height:0;
+}
+.iframe-container iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.animacao{
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.animacao>.anel{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: -20px;
+  border-radius: 100%;
+  border: 1px transparent black;
+  border-top: 1px solid blueviolet;
+  animation: animate 3s linear infinite;
+   bottom:initial;
+   
+}
+.modal-footer{
+  background-color:#212529!important;
+  background-image: url("https://i.ibb.co/R9m7LRp/bg-top-4.png");
+
+}
+
+.animacao>.anel:nth-child(1){
+  border-top: transparent;
+  border-right: 2px solid red;
+  animation: animate 3s linear infinite;
+  top: initial;
+}
+
+.animacao>.anel:nth-child(2){
+  border-top: transparent;
+  border-bottom: 2px solid green;
+  animation: animate2 3s linear infinite;
+  left: initial;
+}
+.animacao>.anel:nth-child(3){
+  position:absolute;
+  top: -66.66px; 
+}
+
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate2{
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}

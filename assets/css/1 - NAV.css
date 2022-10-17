@@ -1,0 +1,35 @@
+nav{
+-webkit-box-shadow: 3px 3px 16px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 16px -4px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 16px -4px rgba(0,0,0,0.75);
+background-image: url("https://i.ibb.co/R9m7LRp/bg-top-4.png");
+}
+
+nav>.container>a{
+  font-size: 150%;
+  justify-items:center;
+  
+}
+
+.offcanvas{
+  background-image: url("https://i.ibb.co/8jPSs3K/bg-top.png");
+}
+
+.search{
+  height: 40px;
+  width: 230px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid black;
+  margin-right: -35px;
+}
+
+.btn0{
+  height: 40px;
+  width: 40%;
+  border:none;
+  border-radius: 6px;
+  outline: none;
+  background-color: black;
+  color:white;
+}

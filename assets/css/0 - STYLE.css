@@ -1,0 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "silkscreen";
+}
+.background{
+  
+    background-image: url("https://i.ibb.co/PgDB5B0/bg-top-3.png");
+}
+
+.preload-wrapper{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  opacity: 0.8;
+  z-index: 999;
+}
+.spinner-grow{
+  width: 300px!important;
+  height: 300px!important;
+}
